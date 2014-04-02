@@ -1,6 +1,6 @@
 package main;
 
-class AdminEmployee extends Employee {
+public class AdminEmployee extends Employee {
 
     private double bonus;
 

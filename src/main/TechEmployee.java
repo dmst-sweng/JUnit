@@ -1,6 +1,6 @@
 package main;
 
-class TechEmployee extends Employee {
+public class TechEmployee extends Employee {
 
     private int overtimeHours;
     private double rate;
