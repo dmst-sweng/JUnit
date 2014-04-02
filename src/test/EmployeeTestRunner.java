@@ -1,5 +1,6 @@
 /* Compile with: javac -cp ~/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar main/*.java test/*.java
- * Execute with: java -classpath ~/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:. test.EmployeeTestRunner
+ * Execute application with: java -classpath ~/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:. main.EmployeeRegistry
+ * Execute tests with: java -classpath ~/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:. test.EmployeeTestRunner
  */
 package test;
 
