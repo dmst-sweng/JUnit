@@ -15,6 +15,8 @@ you agree that the relevant code will have specific functionality.
 
 Please commit tests and source code separately.
 
+Deadline: 30 April
+
 Building and execution
 ==
 
