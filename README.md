@@ -41,4 +41,4 @@ Notes
    we had last time trying to tell javac where junit jar was).
  - Please configure your username and email with Git in order to have your commits appear under your name.
    - git config --global user.name "Marios Fragkoulis"
-   - git config --global user.mail mfg@aueb.gr
+   - git config --global user.email mfg@aueb.gr
