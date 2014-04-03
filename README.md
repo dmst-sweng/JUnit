@@ -33,7 +33,12 @@ Building and execution
  - Execute application with: java -classpath path/to/junit/4.8.2/junit-x.x.x.jar:. main.EmployeeRegistry
  - Execute tests with: java -classpath path/to/junit/junit-x.x.x.jar:. test.EmployeeTestRunner
 
---
-Note: If you are using a command-line tool like Git bash at the lab's Windows machines pay attention not
-to place the junit jar inside the W: disk. Paths to this disk do not work properly (hence the problem
-we had last time trying to tell javac where junit jar was).
+Notes
+==
+
+ - If you are using a command-line tool like Git bash at the lab's Windows machines pay attention not
+   to place the junit jar inside the W: disk. Paths to this disk do not work properly (hence the problem
+   we had last time trying to tell javac where junit jar was).
+ - Please configure your username and email with Git in order to have your commits appear under your name.
+   - git config --global user.name "Marios Fragkoulis"
+   - git config --global user.mail mfg@aueb.gr
