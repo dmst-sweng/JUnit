@@ -7,7 +7,7 @@ import main.AdminEmployee;
 public class EmployeeTestAdmin{
 
 	@Test
-	  public void testPrintIncomeAdmin() {
+	  public void testPrintIncome() {
 		AdminEmployee ae = new AdminEmployee("Alfred", 1600, 0);
 	    assertEquals(1600, ae.printIncome(), 0.1);
 	  }
