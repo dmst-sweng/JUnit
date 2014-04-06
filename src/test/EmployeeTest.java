@@ -92,4 +92,13 @@ public class EmployeeTest {
 		int expected = 41 * (41 * (41 + this.emp1.getName().hashCode()) + (int)this.emp1.printIncome()) + this.emp1.getSSN().hashCode();
 		assertEquals(expected, emp1.hashCode());
 	}
+	
+	/**
+	 * Tests the toString method of the Employee class.
+	 */
+	@Test
+	public void testToString() {
+		String expected = "Employee : \n\tName : " + this.emp1.getName() + "\n\tBase salary : " + this.emp1.printIncome() + "\n\tSSN : " + this.emp1.getSSN();
+		assertEquals(expected, emp1.toString());
+	}
 }
