@@ -101,4 +101,28 @@ public class EmployeeTest {
 		String expected = "Employee : \n\tName : " + this.emp1.getName() + "\n\tBase salary : " + this.emp1.printIncome() + "\n\tSSN : " + this.emp1.getSSN();
 		assertEquals(expected, emp1.toString());
 	}
+	
+	/**
+	 * Tests the getName method of class Employee.
+	 */
+	@Test
+	public void testGetName() {
+		assertEquals(emp1.getName() , "EMP1");
+	}
+	
+	/**
+	 * Tests the printSalary method of class Employee.
+	 */
+	@Test
+	public void testIncome() {
+		assertEquals(emp1.printIncome() , 2000.0 , 10);
+	}
+	
+	/**
+	 * Test the getSSN method of class Employee.
+	 */
+	@Test
+	public void testSSN() {
+		assertEquals(emp1.getSSN() , "ABCDE12345");
+	}
 }
