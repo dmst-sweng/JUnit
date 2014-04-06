@@ -73,6 +73,15 @@ public class Employee {
     	this.ssn = ssn;
     }
     
+    /**
+     * Returns the employee's name.
+     * 
+     * @return The name of the Employee.
+     */
+    public String getName() {
+    	return this.name;
+    }
+    
     @Override
     public boolean equals(Object obj) {
     	
@@ -85,5 +94,10 @@ public class Employee {
     	Employee emp = (Employee)obj;
     	
     	return this.ssn.equals(emp.ssn);
+    }
+    
+    @Override
+    public int hashCode() {
+    	return 41 * (41 * (41 + this.name.hashCode() ) + (int)this.baseSalary ) + this.ssn.hashCode();
     }
 }
