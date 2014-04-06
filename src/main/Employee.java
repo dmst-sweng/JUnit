@@ -72,4 +72,18 @@ public class Employee {
     public void setSSN(String ssn) {
     	this.ssn = ssn;
     }
+    
+    @Override
+    public boolean equals(Object obj) {
+    	
+    	if (obj == null) return false;
+    	
+    	if(this == obj) return true;
+    	
+    	if(!(obj.getClass().equals(Employee.class))) return false;
+    	
+    	Employee emp = (Employee)obj;
+    	
+    	return this.ssn.equals(emp.ssn);
+    }
 }
