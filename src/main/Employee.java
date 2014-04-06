@@ -100,4 +100,9 @@ public class Employee {
     public int hashCode() {
     	return 41 * (41 * (41 + this.name.hashCode() ) + (int)this.baseSalary ) + this.ssn.hashCode();
     }
+    
+    @Override
+    public String toString() {
+    	return "Employee : \n\tName : " + this.name + "\n\tBase salary : " + this.baseSalary + "\n\tSSN : " + this.ssn;
+    }
 }
