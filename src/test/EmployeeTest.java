@@ -6,12 +6,12 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import etc.Languages;
 import main.Employee;
 import main.TechEmployee;
 
 public class EmployeeTest {
 
+	
 	private Employee emp1;
 	private Employee emp2;
 	private Employee emp3;
@@ -124,47 +124,5 @@ public class EmployeeTest {
 	@Test
 	public void testSSN() {
 		assertEquals(emp1.getSSN() , "ABCDE12345");
-	}
-	
-	@Test
-	public void testLanguagesFunctions1() {
-		this.emp1.addLanguage(Languages.English);
-		this.emp1.addLanguage(Languages.French);
-		assertEquals(this.emp1.getLanguages().size() , 2);
-	}
-	
-	@Test
-	public void testLanguagesFunctions2() {
-		this.emp1.addLanguage(Languages.English);
-		this.emp1.addLanguage(null);
-		assertEquals(this.emp1.getLanguages().size() , 1);
-	}
-	
-	@Test
-	public void testLanguagesFunctions3() {
-		this.emp1.addLanguage(Languages.English);
-		this.emp1.addLanguage(Languages.English);
-		assertEquals(this.emp1.getLanguages().size() , 1);
-	}
-	
-	@Test
-	public void testLanguagesFunctions4() {
-		this.emp1.addLanguage(Languages.English);
-		this.emp1.addLanguage(Languages.German);
-		assertTrue(this.emp1.removeLanguage(Languages.English));
-	}
-	
-	@Test
-	public void testLanguagesFunctions5() {
-		this.emp1.addLanguage(Languages.English);
-		this.emp1.addLanguage(Languages.German);
-		assertFalse(this.emp1.removeLanguage(Languages.French));
-	}
-	
-	@Test
-	public void testLanguagesFunctions6() {
-		this.emp1.addLanguage(Languages.English);
-		this.emp1.addLanguage(Languages.German);
-		assertFalse(this.emp1.removeLanguage(null));
 	}
 }
