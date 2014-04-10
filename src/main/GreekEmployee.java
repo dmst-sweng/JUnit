@@ -25,11 +25,24 @@ else if (Edul=="PHD") return 400;
 else return 0;
 
 }
+//Lets assume that JohnDoe is our coffee guy.
+public int bonusForTheCoffeeGuy(String name){
+	int bonus;
+	boolean isTheCoffeeGuy;
+	if (name.equals("JohnDoe")){
+		isTheCoffeeGuy=true;
+	}
+	else{
+		isTheCoffeeGuy=false;
+	}
+	bonus= isTheCoffeeGuy? 50 : 0;
+	return bonus;
+}
 
 
 	public double printIncome() {
 		
-		return baseSalary + EdulevelPayment(EduLevel) +overtimeHours * rate  ;    }
+		return baseSalary + EdulevelPayment(EduLevel) +(overtimeHours * rate)+bonusForTheCoffeeGuy(name) ;    }
 	
 
 }
