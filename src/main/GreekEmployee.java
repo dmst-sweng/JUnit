@@ -19,9 +19,9 @@ public class GreekEmployee extends Employee {
 	
 public int EdulevelPayment(String Edul){
 	
-if (Edul=="Bachelor") return 100;
-else if (Edul=="Master") return 200;
-else if (Edul=="PHD") return 400;
+if (Edul.equals("Bachelor")) return 100;
+else if (Edul.equals("Master")) return 200;
+else if (Edul.equals("PHD")) return 400;
 else return 0;
 
 }
