@@ -1,5 +1,10 @@
 package main;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import etc.Languages;
+
 /**
  * Every instance of this class represents a base Employee.
  *  
@@ -21,6 +26,11 @@ public class Employee {
      * The employee's ssn. Used to uniquely identify an employee.
      */
     protected String ssn;
+    
+    /**
+     * The languages that the current employee can speak.
+     */
+    protected List<Languages> languages;
     
     
     /**
@@ -44,6 +54,7 @@ public class Employee {
     	this.name = n;
     	this.baseSalary = s;
     	this.ssn = ssn;
+    	this.languages = new ArrayList<Languages>();
     }
 
     /**
@@ -80,6 +91,40 @@ public class Employee {
      */
     public String getName() {
     	return this.name;
+    }
+    
+    /**
+     * Adds a new language to the current employee.
+     * 
+     * @param lang The new language to be added.
+     */
+    public void addLanguage(Languages lang) {
+    	if( (lang != null) && !(this.languages.contains(lang)) )
+    		this.languages.add(lang);
+    }
+    
+    /**
+     * Removes a language from the current employee.
+     * 
+     * @param lang The language to be removed.
+     * @return true , if the language was deleted , 
+     * 	or false if there was no such language
+     */
+    public boolean removeLanguage(Languages lang) {
+    	if (!this.languages.contains(lang)) return false;
+    	
+    	this.languages.remove(lang);
+    	return true;
+    }
+    
+    /**
+     * Returns a copy of the list of the 
+     * employee's languages.
+     * 
+     * @return A list of the employee's languages.
+     */
+    public List<Languages> getLanguages() {
+    	return new ArrayList<Languages>(this.languages);
     }
     
     @Override
