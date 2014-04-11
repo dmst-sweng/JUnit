@@ -148,6 +148,15 @@ public class Employee {
     
     @Override
     public String toString() {
-    	return "Employee : \n\tName : " + this.name + "\n\tBase salary : " + this.baseSalary + "\n\tSSN : " + this.ssn;
+    	
+    	String langs = "\n\tLanguages : ";
+    	
+    	for(Languages l : this.languages) 
+    		langs += (langs.equals("\n\tLanguages : "))?l:(" , " + l);
+    	
+    	return "Employee : \n\tName : " + this.name + 
+    			"\n\tBase salary : " + this.baseSalary + 
+    			"\n\tSSN : " + this.ssn +
+    			langs;
     }
 }
