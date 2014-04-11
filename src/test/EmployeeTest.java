@@ -98,7 +98,15 @@ public class EmployeeTest {
 	 */
 	@Test
 	public void testToString() {
-		String expected = "Employee : \n\tName : " + this.emp1.getName() + "\n\tBase salary : " + this.emp1.printIncome() + "\n\tSSN : " + this.emp1.getSSN();
+		emp1.addLanguage(Languages.English);
+		emp1.addLanguage(Languages.German);
+		
+		String langs = "\n\tLanguages : English , German";
+		String expected = "Employee : \n\tName : " + this.emp1.getName() + 
+						  "\n\tBase salary : " + this.emp1.printIncome() + 
+						  "\n\tSSN : " + this.emp1.getSSN() + 
+						  langs;
+		
 		assertEquals(expected, emp1.toString());
 	}
 	
