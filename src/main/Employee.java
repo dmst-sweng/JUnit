@@ -143,7 +143,11 @@ public class Employee {
     
     @Override
     public int hashCode() {
-    	return 41 * (41 * (41 + this.name.hashCode() ) + (int)this.baseSalary ) + this.ssn.hashCode();
+    	return 41 * 
+    			(41 * 
+    				(41 + this.name.hashCode() ) + 
+    				(int)this.baseSalary ) + 
+    				this.ssn.hashCode();
     }
     
     @Override
