@@ -146,8 +146,8 @@ public class Employee {
     	return 41 * 
                (41 * 
                 (41 + this.name.hashCode() ) + 
-    				(int)this.baseSalary ) + 
-    				 this.ssn.hashCode();
+                  (int)this.baseSalary ) + 
+                   this.ssn.hashCode();
     }
     
     @Override
