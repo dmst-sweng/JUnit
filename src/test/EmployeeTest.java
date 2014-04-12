@@ -89,7 +89,12 @@ public class EmployeeTest {
 	 */
 	@Test
 	public void testHashCode() {
-		int expected = 41 * (41 * (41 + this.emp1.getName().hashCode()) + (int)this.emp1.printIncome()) + this.emp1.getSSN().hashCode();
+		int expected = 41 * 
+				        (41 * 
+				          (41 + this.emp1.getName().hashCode()) + 
+				          (int)this.emp1.printIncome()) + 
+				           this.emp1.getSSN().hashCode();
+		
 		assertEquals(expected, emp1.hashCode());
 	}
 	
