@@ -1,6 +1,9 @@
 package test;
 
 import static org.junit.Assert.*;
+
+import java.text.DecimalFormat;
+
 import main.SalesEmployee;
 
 import org.junit.After;
@@ -35,7 +38,8 @@ public class EmployeeTestSales {
 
 	@Test
 	public void testSalesEmployeeToString() {
-		String exp = "Name: " + se.getName() + "\nFinal Income: " + se.EmployeeIncome(se.overTimeHours, se.commission) + " Euros";
+		DecimalFormat f = new DecimalFormat("0.00");
+		String exp = "Name: " + se.getName() + "  " +"Final Income: " + f.format(se.EmployeeIncome(se.overTimeHours, se.commission)) + " Euros";
 		assertEquals(exp, se.toString() );
 	}
 }
