@@ -16,6 +16,9 @@ public class EmployeeTestSales {
 		se = new SalesEmployee("Mayra", 600, 7, 0.5f, 32000);
 	}
 	
+	/**
+	 * Perform after each test
+	 */
 	@After
 	public void afterTest() {
 		se = null;

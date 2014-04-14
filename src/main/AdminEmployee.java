@@ -13,6 +13,10 @@ public class AdminEmployee extends Employee {
         bonus = b;
     }
 
+    public double getBonus() {
+        return this.bonus;
+     }
+    
     public double printIncome() {
         return baseSalary + bonus;
     }
