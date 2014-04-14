@@ -32,6 +32,11 @@ public class Employee {
      */
     protected List<Languages> languages;
     
+    /**
+     *  An employee's statutory employment leave. 
+     */
+     protected int sel;
+    
     
     /**
      * Base constructor.
@@ -55,6 +60,7 @@ public class Employee {
     	this.baseSalary = s;
     	this.ssn = ssn;
     	this.languages = new ArrayList<Languages>();
+    	this.sel=20;
     }
 
     /**
@@ -139,6 +145,26 @@ public class Employee {
     	Employee emp = (Employee)obj;
     	
     	return this.ssn.equals(emp.ssn);
+    }
+    
+    /**
+     *   Sets the employee's statutory employment leave , to the value given as parameter.
+     * 
+     * @param sel The new statutory employment leave of the employee.
+     */
+    public void setStatutoryEmploymentLeave(int sel) {
+    	this.sel = sel;
+    	
+    }
+    
+    /**
+     * Returns the number of days that correspond to employee's
+     * statutory employment leave.
+     * 
+     * @return number of days of statutory employment leave
+     */
+    public int getStatutoryEmploymentLeave() {	
+    	return this.sel;
     }
     
     @Override

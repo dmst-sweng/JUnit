@@ -200,4 +200,15 @@ public class EmployeeTest {
 		this.emp4.setSSN("ABGDE543");
 		assertNotEquals(this.emp3.getSSN() , this.emp4.getSSN());
 	}
+	
+	@Test
+	public void testStatutoryEmploymentLeave1(){
+		assertEquals(20 , this.emp1.getStatutoryEmploymentLeave());
+	}
+	
+	@Test
+	public void testStatutoryEmploymentLeave2(){
+		this.emp1.setStatutoryEmploymentLeave(23);
+		assertEquals(23 , this.emp1.getStatutoryEmploymentLeave());
+	}
 }
