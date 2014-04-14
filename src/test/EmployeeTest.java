@@ -15,6 +15,7 @@ public class EmployeeTest {
 	private Employee emp1;
 	private Employee emp2;
 	private Employee emp3;
+	private Employee emp4;
 	
 	/**
 	 * Runs before every test.
@@ -24,6 +25,7 @@ public class EmployeeTest {
 		this.emp1 = new Employee("EMP1" , 2000.0 , "ABCDE12345");
 		this.emp2 = new Employee("EMP2" , 2300.0 , "FGHIJ6789");
 		this.emp3 = new Employee("EMP3" , 2500.0 , "FGHIJ6789");
+		this.emp4 = new Employee("EMP4" , 2400.0 );
 	}
 	
 	/**
@@ -34,6 +36,7 @@ public class EmployeeTest {
 		this.emp1 = null;
 		this.emp2 = null;
 		this.emp3 = null;
+		this.emp4 = null;
 	}
 	
 	@Test
@@ -179,5 +182,22 @@ public class EmployeeTest {
 		this.emp1.addLanguage(Languages.English);
 		this.emp1.addLanguage(Languages.German);
 		assertFalse(this.emp1.removeLanguage(null));
+	}
+	
+	@Test
+	public void testSsn1() {
+		assertEquals("-1" , this.emp4.getSSN());
+	}
+	
+	@Test
+	public void testSsn2() {
+		this.emp4.setSSN("ABGDE543");
+		assertEquals(this.emp4.getSSN() , this.emp4.getSSN());
+	}
+	
+	@Test
+	public void testSsn3() {
+		this.emp4.setSSN("ABGDE543");
+		assertNotEquals(this.emp3.getSSN() , this.emp4.getSSN());
 	}
 }
