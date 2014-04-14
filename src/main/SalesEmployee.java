@@ -1,5 +1,8 @@
 package main;
 
+import java.text.DecimalFormat;
+
+
 public class SalesEmployee extends Employee{
 	
 	public int overTimeHours;
@@ -15,13 +18,16 @@ public class SalesEmployee extends Employee{
 	}
 	
 	public double EmployeeIncome (int hours, float com) {
-		return super.baseSalary + hours * costOfOverTimeHour + totalSales * commission;
+		
+    return super.baseSalary + hours * costOfOverTimeHour + totalSales * commission;
+	
 	}
 	
 	@Override
 	public String toString() {
-		return "Name: " + super.name + 
-				"\nFinal Income: " + EmployeeIncome(overTimeHours, commission) + " Euros";
+	    DecimalFormat f = new DecimalFormat("0.00");
+		return "Name: " + super.name + "  " +
+				"Final Income: " + f.format(EmployeeIncome(overTimeHours, commission)) + " Euros";
 	}
 
 }
