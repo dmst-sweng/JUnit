@@ -5,6 +5,7 @@ import java.util.List;
 
 import etc.Languages;
 
+
 /**
  * Every instance of this class represents a base Employee.
  *  
@@ -35,7 +36,7 @@ public class Employee {
     /**
      *  An employee's statutory employment leave. 
      */
-     protected int sel;
+    protected int sel;
     
     
     /**
@@ -47,6 +48,7 @@ public class Employee {
     public Employee(String n, double s) { 
     	this(n , s , "-1");
     }
+    
     
     /**
      * Overloaded constructor
@@ -62,7 +64,8 @@ public class Employee {
     	this.languages = new ArrayList<Languages>();
     	this.sel=20;
     }
-
+    
+    
     /**
      * Returns the income of the employee.
      * 
@@ -71,6 +74,7 @@ public class Employee {
     public double printIncome() {
     	return this.baseSalary;
     }
+    
     
     /**
      * Returns the employee's ssn
@@ -81,6 +85,7 @@ public class Employee {
     	return this.ssn;
     }
     
+    
     /**
      * Sets the employee's ssn , to the value given as parameter.
      * 
@@ -89,6 +94,7 @@ public class Employee {
     public void setSSN(String ssn) {
     	this.ssn = ssn;
     }
+    
     
     /**
      * Returns the employee's name.
@@ -99,6 +105,7 @@ public class Employee {
     	return this.name;
     }
     
+    
     /**
      * Adds a new language to the current employee.
      * 
@@ -108,6 +115,7 @@ public class Employee {
     	if( (lang != null) && !(this.languages.contains(lang)) )
     		this.languages.add(lang);
     }
+    
     
     /**
      * Removes a language from the current employee.
@@ -123,6 +131,7 @@ public class Employee {
     	return true;
     }
     
+    
     /**
      * Returns a copy of the list of the 
      * employee's languages.
@@ -132,6 +141,28 @@ public class Employee {
     public List<Languages> getLanguages() {
     	return new ArrayList<Languages>(this.languages);
     }
+    
+    
+    /**
+     *   Sets the employee's statutory employment leave , to the value given as parameter.
+     * 
+     * @param sel The new statutory employment leave of the employee.
+     */
+    public void setStatutoryEmploymentLeave(int sel) {
+    	this.sel = sel;
+    }
+    
+    
+    /**
+     * Returns the number of days that correspond to employee's
+     * statutory employment leave.
+     * 
+     * @return number of days of statutory employment leave
+     */
+    public int getStatutoryEmploymentLeave() {	
+    	return this.sel;
+    }
+    
     
     @Override
     public boolean equals(Object obj) {
@@ -147,25 +178,6 @@ public class Employee {
     	return this.ssn.equals(emp.ssn);
     }
     
-    /**
-     *   Sets the employee's statutory employment leave , to the value given as parameter.
-     * 
-     * @param sel The new statutory employment leave of the employee.
-     */
-    public void setStatutoryEmploymentLeave(int sel) {
-    	this.sel = sel;
-    	
-    }
-    
-    /**
-     * Returns the number of days that correspond to employee's
-     * statutory employment leave.
-     * 
-     * @return number of days of statutory employment leave
-     */
-    public int getStatutoryEmploymentLeave() {	
-    	return this.sel;
-    }
     
     @Override
     public int hashCode() {
@@ -175,6 +187,7 @@ public class Employee {
                   (int)this.baseSalary ) + 
                    this.ssn.hashCode();
     }
+    
     
     @Override
     public String toString() {
