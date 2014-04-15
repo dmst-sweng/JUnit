@@ -10,6 +10,7 @@ class EmployeeRegistry {
         SecretaryEmployee sep = new SecretaryEmployee("Anna", 1100, 3, 30.5);
         GreekEmployee gem = new GreekEmployee("Manolis", 426, "Master", 10, 3);
         FinancialEmployee fe = new FinancialEmployee("Bill", 1000, 3, 85);
+        WorkerEmployee we=new WorkerEmployee("Mathias",600,80,12);
         ae.setBonus(500);
         SalesEmployee se = new SalesEmployee("Mayra", 600.0, 7, 0.05f, 32000);
         System.out.println("Employee makes " + d.format(e.printIncome()) + " Euros"+ '\n'+ "TechEmployee makes " 
@@ -17,6 +18,7 @@ class EmployeeRegistry {
         System.out.println("SecretaryEmployee makes " + d.format(sep.printIncome()) + " Euros");
         System.out.println("GreekEmployee makes " + d.format(gem.printIncome()) + " Euros");
         System.out.println("FinancialEmployee makes " + d.format(fe.printIncome()) + " Euros");
+        System.out.println("WorkerEmployee makes " + d.format(we.printIncome()) + " Euros");
         System.out.println(se.toString());
     }
 }
