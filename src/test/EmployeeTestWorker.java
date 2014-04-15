@@ -5,7 +5,7 @@ import main.WorkerEmployee;
 
 import org.junit.Test;
 
-public class EmployeeTestWorkerEmployee {
+public class EmployeeTestWorker {
 
 	@Test
 	  public void testPrintIncome() {
