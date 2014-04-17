@@ -200,6 +200,7 @@ public class Employee {
     	return "Employee : \n\tName : " + this.name + 
     			"\n\tBase salary : " + this.baseSalary + 
     			"\n\tSSN : " + this.ssn +
+    			"\n\tStatutory Employment Leave : " + this.sel +
     			langs;
     }
 }
