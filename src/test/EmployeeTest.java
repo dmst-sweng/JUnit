@@ -108,11 +108,14 @@ public class EmployeeTest {
 	public void testToString() {
 		emp1.addLanguage(Languages.English);
 		emp1.addLanguage(Languages.German);
+		emp1.setStatutoryEmploymentLeave(30);
 		
 		String langs = "\n\tLanguages : English , German";
 		String expected = "Employee : \n\tName : " + this.emp1.getName() + 
 						  "\n\tBase salary : " + this.emp1.printIncome() + 
 						  "\n\tSSN : " + this.emp1.getSSN() + 
+						  "\n\tStatutory Employment Leave : " + 
+						  this.emp1.getStatutoryEmploymentLeave() + 
 						  langs;
 		
 		assertEquals(expected, emp1.toString());
