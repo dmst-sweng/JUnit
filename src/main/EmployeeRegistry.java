@@ -13,6 +13,7 @@ class EmployeeRegistry {
         WorkerEmployee we=new WorkerEmployee("Mathias",600,80,12);
         ae.setBonus(500);
         SalesEmployee se = new SalesEmployee("Mayra", 600.0, 7, 0.05f, 32000);
+        ParentEmployee pe = new ParentEmployee("John Doe",3000, 2);
         System.out.println("Employee makes " + d.format(e.printIncome()) + " Euros"+ '\n'+ "TechEmployee makes " 
         + d.format(te.printIncome()) + " Euros"  + '\n'+ "AdminEmployee makes " + d.format(ae.printIncome()) + " Euros");
         System.out.println("SecretaryEmployee makes " + d.format(sep.printIncome()) + " Euros");
@@ -20,6 +21,7 @@ class EmployeeRegistry {
         System.out.println("FinancialEmployee makes " + d.format(fe.printIncome()) + " Euros");
         System.out.println("WorkerEmployee makes " + d.format(we.printIncome()) + " Euros");
         System.out.println(se.toString());
+        System.out.println("ParentEmployee makes " + d.format(pe.printIncome()) + " Euros");
     }
 }
 
