@@ -38,15 +38,24 @@ public class Employee {
      */
     protected int sel;
     
+    /**
+     * Variable to see if the employee is currently working (true), or has been 
+     * working in this corporation in the past (false).
+     */   
+    protected boolean isEmployed;
+    
     
     /**
      * Base constructor.
      * 
      * @param n The name of the employee.
      * @param s The base salary of the employee.
+     * @param e The employees' status is set to employed (isEmployed = true), since
+     * 			the constructor is only called when a new employee is hired.
      */
     public Employee(String n, double s) { 
     	this(n , s , "-1");
+    	this.isEmployed = true;
     }
     
     
@@ -56,6 +65,8 @@ public class Employee {
      * @param n The name of the employee.
      * @param s The base salary of the employee.
      * @param ssn The ssn of the employee.
+     * @param e The employees' status is set to employed (isEmployed = true), since
+     * 			the constructor is only called when a new employee is hired.
      */
     public Employee(String n , double s , String ssn) {
     	this.name = n;
@@ -63,6 +74,7 @@ public class Employee {
     	this.ssn = ssn;
     	this.languages = new ArrayList<Languages>();
     	this.sel=20;
+    	this.isEmployed = true;
     }
     
     
@@ -161,6 +173,23 @@ public class Employee {
      */
     public int getStatutoryEmploymentLeave() {	
     	return this.sel;
+    }
+    
+    /**
+     * Returns the number of days that correspond to employee's
+     * statutory employment leave.
+     * 
+     * I didn't like the word "Fire" so I used "Dismiss" :P
+     */
+    public void dismissEmployee() {	
+    	this.isEmployed = false;
+    }
+    
+    /**
+     * Returns if the Employee is currently employed (true) or dismissed (false)
+     */
+    public boolean isEmployeeDismissed() {	
+    	return this.isEmployed;
     }
     
     
