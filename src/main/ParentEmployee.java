@@ -13,9 +13,9 @@ public class ParentEmployee extends Employee {
 		childrenNum = cn;
 	}
 			
-	 public double printIncome() {
+	public double printIncome() {
 	   	return baseSalary + childrenNum * 50 ;
-	 }
+	}
 	    
 	
 
