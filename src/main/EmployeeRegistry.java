@@ -20,6 +20,8 @@ class EmployeeRegistry {
         List<String> languages = Arrays.asList("English", "German", "Greek");
         TranslationEmployee tre = new TranslationEmployee("Iason", 1500, 5, languages);
         HRDirector hr = new HRDirector("Maria Iliadi", 1050.00);
+        AdministrationEmployee ade = new AdministrationEmployee("John Mak", 5000, 4);
+        
         System.out.println("Employee makes " + d.format(e.printIncome()) + " Euros"+ '\n'+ "TechEmployee makes " 
         + d.format(te.printIncome()) + " Euros"  + '\n'+ "AdminEmployee makes " + d.format(ae.printIncome()) + " Euros");
         System.out.println("SecretaryEmployee makes " + d.format(sep.printIncome()) + " Euros");
@@ -31,6 +33,7 @@ class EmployeeRegistry {
         System.out.println("ParentEmployee makes " + d.format(pe.printIncome()) + " Euros");
         System.out.println("A Translation Employee makes " + d.format(tre) + " Euros");
         System.out.println("HR Director, " + hr.name + ", makes " + d.format(hr.printIncome()) + " Euros");
+        System.out.println("AdministrationEmployee with absenses makes " + d.format(ade.printIncome()) + " Euros");
     }
 }
 
