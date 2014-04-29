@@ -14,7 +14,7 @@ class EmployeeRegistry {
         ae.setBonus(500);
         SalesEmployee se = new SalesEmployee("Mayra", 600.0, 7, 0.05f, 32000);
         ParentEmployee pe = new ParentEmployee("John Doe",3000, 2);
-        HRDirector hr = new HRDirector("Maria Iliadi", 1050.00);
+        HRDirector hr = new HRDirector("Maria Iliadi", 1050.00, 0.8);
         System.out.println("Employee makes " + d.format(e.printIncome()) + " Euros"+ '\n'+ "TechEmployee makes " 
         + d.format(te.printIncome()) + " Euros"  + '\n'+ "AdminEmployee makes " + d.format(ae.printIncome()) + " Euros");
         System.out.println("SecretaryEmployee makes " + d.format(sep.printIncome()) + " Euros");
