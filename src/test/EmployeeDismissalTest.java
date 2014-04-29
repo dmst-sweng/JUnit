@@ -6,7 +6,7 @@ import main.Employee;
 
 public class EmployeeDismissalTest {
 	@Test
-	public void testPrintIncome() {
+	public void testDismissEmployee() {
 		Employee employee = new Employee("Bazz", 1050.20);
 		employee.dismissEmployee();
 		assertEquals(false, employee.isEmployeeDismissed());
