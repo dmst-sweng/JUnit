@@ -8,11 +8,16 @@ import main.Trainer;
 public class TrainerTest {
 	
 	  @Test
-	  public void test_returnEuro() {
-	      System.out.println("Test if you are a good runner") ;
-	      Trainer s = new Trainer(112.2,11.5);
-	      assertTrue(s.record(100.4,10.2) == "good");
+	  public void test_record() {
+	      //System.out.println("Test if you are a good runner control works properly") ;
+	      Trainer s = new Trainer(112.2,8.5);
+	      assertTrue(s.record() == "good");
 	   }
 
-
+	  @Test
+	  public void test_totalRunning() {
+	     // System.out.println("Test if your total run works properly") ;
+	      Trainer s2 = new Trainer(112.2,8.5);
+	      assertTrue(s2.totalRuning() == 112.2);
+	   }
 }

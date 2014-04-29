@@ -17,7 +17,7 @@ public class Trainer {
 
 
 
-	public String record(double meters,double time)
+	public String record()
 	{
 
 
@@ -30,7 +30,7 @@ public class Trainer {
 
 
 
-	public double TotalRuning(double meters)
+	public double totalRuning()
 	{
 		totalRun=totalRun+meters;
 
