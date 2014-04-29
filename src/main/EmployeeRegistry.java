@@ -9,7 +9,7 @@ class EmployeeRegistry {
         AdminEmployee ae = new AdminEmployee("Alfred", 1500, 0);
         SecretaryEmployee sep = new SecretaryEmployee("Anna", 1100, 3, 30.5);
         GreekEmployee gem = new GreekEmployee("Manolis", 426, "Master", 10, 3);
-        FinancialEmployee fe = new FinancialEmployee("Bill", 1000, 3, 85, 3, 15);
+        FinancialEmployee fe = new FinancialEmployee("Bill", 1000, 3, 85, 3, 15, 2, 10);
         WorkerEmployee we=new WorkerEmployee("Mathias",600,80,12);
         ae.setBonus(500);
         SalesEmployee se = new SalesEmployee("Mayra", 600.0, 7, 0.05f, 32000);
