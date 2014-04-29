@@ -46,7 +46,7 @@ public class EmployeeTestGreek {
 	  
 	@Test
 	  public void testPrintIncomeFalse() {
-	     assertNotEquals(1500, gremp.printIncome(), 0.1);
+	     assertEquals(1500, gremp.printIncome(), 0.1);
 	  
 	  
 	  }
@@ -59,7 +59,7 @@ public class EmployeeTestGreek {
 
 	@Test
 	  public void testTheCoffeeGuyFalse() {
-		   assertNotEquals(1550, grempcg.printIncome(), 0.1);
+		   assertEquals(1550, grempcg.printIncome(), 0.1);
 	  }
 
 }
