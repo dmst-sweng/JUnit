@@ -22,6 +22,7 @@ class EmployeeRegistry {
         HRDirector hr = new HRDirector("Maria Iliadi", 1050.00);
         AdministrationEmployee ade = new AdministrationEmployee("John Mak", 5000, 4);
         LogisticsEmployee le = new LogisticsEmployee("Helen", 1000, 178, 14, 700);
+	BossEmployee be = new BossEmployee("Stelios" , 900, 180, 20, 200);
         
         System.out.println("Employee makes " + d.format(e.printIncome()) + " Euros"+ '\n'+ "TechEmployee makes " 
         + d.format(te.printIncome()) + " Euros"  + '\n'+ "AdminEmployee makes " + d.format(ae.printIncome()) + " Euros");
@@ -36,7 +37,7 @@ class EmployeeRegistry {
         System.out.println("HR Director, " + hr.name + ", makes " + d.format(hr.printIncome()) + " Euros");
         System.out.println("AdministrationEmployee with absenses makes " + d.format(ade.printIncome()) + " Euros");
         System.out.println("LogisticsEmployee makes " + d.format(le.printIncome()) + " Euros Per Month and "+ d.format(le.printIncomePerYear()) + " Euros Per Year");
-
+	System.out.println("BossEmployee makes "+ d.format(be.printIncome()) + " Euros") ;
     }
 }
 

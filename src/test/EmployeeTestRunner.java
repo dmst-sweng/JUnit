@@ -18,7 +18,8 @@ public class EmployeeTestRunner {
               EmployeeTestWorker.class,
               EmployeeTestMarketing.class,
               TrainerTest.class,
-              EmployeeTestLogistics.class);
+              EmployeeTestLogistics.class,
+	      EmployeeTestBossEmployee.class);
 	  	
       for (Failure failure : resultEmp.getFailures()) {
 		System.out.println(failure.toString());
