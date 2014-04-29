@@ -29,7 +29,7 @@ class EmployeeRegistry {
         System.out.println("WorkerEmployee makes " + d.format(we.printIncome()) + " Euros");
         System.out.println(se.toString());
         System.out.println("ParentEmployee makes " + d.format(pe.printIncome()) + " Euros");
-        System.out.println("A Translation Employee makes " + d.format(tre) + " Euros");
+        System.out.println("A Translation Employee makes " + d.format(tre.printIncome()) + " Euros");
         System.out.println("HR Director, " + hr.name + ", makes " + d.format(hr.printIncome()) + " Euros");
     }
 }
