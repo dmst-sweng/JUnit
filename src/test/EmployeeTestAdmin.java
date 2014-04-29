@@ -21,7 +21,7 @@ public class EmployeeTestAdmin{
 	 */
 	@Before
 	public void setUp() {
-		ae = new AdminEmployee("Alfred", 1600, 0);
+		ae = new AdminEmployee("Alfred", 1600, 0, 0);
 	}
 	
 	/**
@@ -36,12 +36,20 @@ public class EmployeeTestAdmin{
 		//AdminEmployee ae = new AdminEmployee("Alfred", 1600, 0);
 	    assertEquals(1600, ae.printIncome(), 0.1);
 	  }
+	
 
 	@Test
 	public void testSetBonus() {
 		ae.setBonus(245);
 		assertEquals(245, ae.getBonus(), 0.1);
 	}
+	
+	@Test
+	public void testSetExtraDaysOff() {
+		ae.setextraDaysOff(7);
+		assertEquals(7, ae.getExtraDaysOff(), 0.1);
+	}
+	
 	}
 
 
