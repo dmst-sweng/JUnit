@@ -8,7 +8,8 @@ public class EmployeeTestRunner {
    public static void main(String[] args) {
       Result resultEmp = JUnitCore.runClasses(EmployeeTest.class,EmployeeTestAdmin.class,
     		  EmployeeTestTech.class,EmployeeTestSecretary.class,EmployeeTestGreek.class,
-    		  EmployeeTestFinancial.class,EmployeeTestSales.class,EmployeeTestWorker.class);
+    		  EmployeeTestFinancial.class,EmployeeTestSales.class,EmployeeTestWorker.class,
+    		  EmployeePartTimeTest.class);
 	  	
       for (Failure failure : resultEmp.getFailures()) {
 		System.out.println(failure.toString());
