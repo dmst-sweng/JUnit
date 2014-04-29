@@ -15,6 +15,8 @@ class EmployeeRegistry {
         ae.setBonus(500);
         SalesEmployee se = new SalesEmployee("Mayra", 600.0, 7, 0.05f, 32000);
         ParentEmployee pe = new ParentEmployee("John Doe",3000, 2);
+        List<String> languages = Arrays.asList("English", "German", "Greek");
+        TranslationEmployee tre = new TranslationEmployee("Iason", 1500, 5, languages);
         HRDirector hr = new HRDirector("Maria Iliadi", 1050.00);
         System.out.println("Employee makes " + d.format(e.printIncome()) + " Euros"+ '\n'+ "TechEmployee makes " 
         + d.format(te.printIncome()) + " Euros"  + '\n'+ "AdminEmployee makes " + d.format(ae.printIncome()) + " Euros");
@@ -25,6 +27,7 @@ class EmployeeRegistry {
         System.out.println("WorkerEmployee makes " + d.format(we.printIncome()) + " Euros");
         System.out.println(se.toString());
         System.out.println("ParentEmployee makes " + d.format(pe.printIncome()) + " Euros");
+        System.out.println("A Translation Employee makes " + d.format(tre) + " Euros");
         System.out.println("HR Director, " + hr.name + ", makes " + d.format(hr.printIncome()) + " Euros");
     }
 }
