@@ -87,6 +87,15 @@ public class Employee {
     	return this.baseSalary;
     }
     
+    /**
+     * Assuming the income is yearly this method converts
+     * the yearly income into a monthly income to better fit 
+     * Greek standards 
+     */
+    
+    public double printMonthlyWage() {
+    	return (this.baseSalary)/12;
+    }
     
     /**
      * Returns the employee's ssn
