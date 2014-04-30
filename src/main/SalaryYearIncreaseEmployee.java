@@ -22,7 +22,7 @@ public class SalaryYearIncreaseEmployee extends Employee {
         if (year >= 20) {
         return baseSalary + baseSalary*0.75; }
 
-        else if (year >5 AND year<20) {
+        else if (year >5 & year<20) {
         return baseSalary + baseSalary*0.50; }
 
         else {

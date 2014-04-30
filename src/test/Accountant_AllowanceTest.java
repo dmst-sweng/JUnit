@@ -11,7 +11,7 @@ public class Accountant_AllowanceTest{
 	public void	testSumAllowance() {
 
 		Accountant_Allowance al= new Accountant_Allowance("Bill Anderson",2000,600);
-		assertTrue(al.printAllowance() == 2600) ;
+		assertTrue(al.printSumAllowance() == 2600) ;
 
 		  }
 	}

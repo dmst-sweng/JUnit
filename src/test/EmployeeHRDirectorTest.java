@@ -8,6 +8,6 @@ public class EmployeeHRDirectorTest {
 	@Test
 	public void testPrintIncome() {
 		HRDirector hr = new HRDirector("Maria", 1050.20);
-		assertEquals(1050.00, hr.printIncome(), 0.1);
+		assertEquals(1050.20, hr.printIncome(), 0.1);
 	}
 }

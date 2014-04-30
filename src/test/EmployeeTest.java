@@ -201,7 +201,7 @@ public class EmployeeTest {
 	@Test
 	public void testSsn3() {
 		this.emp4.setSSN("ABGDE543");
-		assertEquals(this.emp3.getSSN() , this.emp4.getSSN());
+		assertNotSame(this.emp3.getSSN() , this.emp4.getSSN());
 	}
 	
 	@Test

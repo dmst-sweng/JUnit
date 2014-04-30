@@ -22,7 +22,7 @@ class EmployeeRegistry {
         HRDirector hr = new HRDirector("Maria Iliadi", 1050.00);
         AdministrationEmployee ade = new AdministrationEmployee("John Mak", 5000, 4);
         LogisticsEmployee le = new LogisticsEmployee("Helen", 1000, 178, 14, 700);
-	BossEmployee be = new BossEmployee("Stelios" , 900, 180, 20, 200);
+	    BossEmployee be = new BossEmployee("Stelios" , 900, 180, 20, 200);
         
         System.out.println("Employee makes " + d.format(e.printIncome()) + " Euros"+ '\n'+ "TechEmployee makes " 
         + d.format(te.printIncome()) + " Euros"  + '\n'+ "AdminEmployee makes " + d.format(ae.printIncome()) + " Euros");
